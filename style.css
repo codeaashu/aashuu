@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
+
 @font-face {
   font-family: Nu;
   src: url(./assets/Fonts/NeueMontreal-Regular.otf);
@@ -14,6 +16,7 @@
   font-family: aashu;
   src: url(./assets/Fonts/calendar\ note\ tfb.ttf);
 }
+
 /* ===( Creative By : CODE AASHU )=== */
 :root {
   --primary-color: #fff;
@@ -388,14 +391,14 @@ nav a.active::after {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  font-size: 2.5vw;
+  font-size: 1.8vw;
   font-weight: bolder;
   display: inline-block;
   position: absolute;
-  font-family:"unique";
+  font-family: "Gabriela", serif;
   z-index: 2;
   top: 2vw;
-  left: -23.7vw;
+  left: -25.2vw;
   white-space: nowrap;
 }
 .hero .one {
@@ -407,7 +410,7 @@ nav a.active::after {
 .hero h1 {
   font-size: 10vw;
   line-height: 1;
-  font-family: clash;
+  font-family: Unique;
   text-shadow: 
   .01em .01em 0 #1b3135,
   .02em .02em 0 #1b3135;
@@ -415,9 +418,16 @@ nav a.active::after {
 .hero h2 {
   color: var(--primary-color);
   text-decoration: none;
-  font-size: 3vw;
-  line-height: 1;
+  font-size: 3.5vw;
+  line-height: 2;
   font-family: unique;
+  Padding: 0.1rem 0.3rem;
+  padding-left: 2.3rem;
+  border-radius: 2rem;
+  border: 1px solid #494b4c;
+  border-bottom-color: #121619;
+  color: #c6c6c6;
+  background: linear-gradient(to top, #15181a 15%, #333638 85%, #3a3d3f);
   background: rgb(17,168,179);
   background: linear-gradient(183deg, rgba(17,168,179,1) 0%, rgba(8,79,84,1) 100%);
   -webkit-background-clip: text;
@@ -1480,7 +1490,7 @@ nav a.active::after {
 .contact .contact-texts h2 {
   font-size: 5vw;
   font-weight: normal;
-  font-family: Clash;
+  font-family: "Gabriela", serif;
 }
 .contact .contact-texts a::after {
   content: "";
@@ -1509,7 +1519,7 @@ footer {
   padding: 1vw 4vw;
 }
 footer h1 {
-  font-family: unique;
+  font-family: "Gabriela", serif;
   font-weight: normal;
   font-size: 1.4vw;
 }
@@ -1651,9 +1661,9 @@ nav{
   top: 473px;
 }
 .hero .profile #profile {
-  font-size: 12vw;
-  top: -15vw;
-  left: -38vw;
+  font-size: 6vw;
+  top: -9vw;
+  left: -33vw;
 }
 .hero .one {
   margin-top: 0vw;
@@ -1661,11 +1671,13 @@ nav{
   align-items: center;
 }
 .hero h1 {
-  font-size: 15vw;
+  font-size: 12vw;
 }
 
 .hero .full h2 {
   font-size: 5vw;
+  Padding: 0.1rem 0.3rem;
+  border-radius: 2rem;
 }
 .hero h4 {
   display: none;
@@ -1848,10 +1860,11 @@ nav{
 .contact .contact-texts h2 {
   font-size: 6vw;
   font-weight: normal;
-  font-family: Clash;
+  font-family: "Gabriela", serif;
 }
 footer h1 {
   font-size: 2vw;
+  font-family: "Gabriela", serif;
 }
 footer .back-top {
   display: none;
