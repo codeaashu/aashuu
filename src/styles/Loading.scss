@@ -1,0 +1,23 @@
+.preloader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+
+    img {
+        width: 150px;
+    }
+
+    h1 {
+        font-family: 'Remachine Script Personal Use' !important;
+        color: white;
+        font-size: 60px;
+    }
+}
+
+@media (max-width:480px) {
+    .preloader img {
+        width: 150px;
+    }
+}

@@ -1,0 +1,200 @@
+:root {
+  --body-color: #0F0F0F;
+  --dark-black-color: #323232;
+  --white-color: #FFFFFF;
+  --text-color: #BCBCBC;
+  --text-main-color: #676767;
+  --primary-color: #1DB954;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+::selection {
+  user-select: none;
+}
+
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.shadow_box * {
+  z-index: 2;
+  position: relative;
+}
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700&display=swap');
+
+html {
+  overflow-x: hidden !important;
+}
+
+body {
+  // font-family: 'Unbounded', cursive;
+  font-family: 'Jost', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--white-color);
+  background: var(--body-color);
+  overflow-x: hidden !important;
+}
+
+.theme_btn {
+  background: var(--body-color);
+  color: var(--white-color);
+  display: inline-block;
+  transition: .3s;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 30px;
+  border: none;
+  text-decoration: none;
+  position: relative;
+  border-radius: 14px !important;
+
+  .bg_img {
+    opacity: 0.1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    border-radius: 14px;
+    opacity: 0.25;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.01));
+    z-index: -1;
+    border-radius: 14px;
+    margin: -1px;
+  }
+
+  &:hover {
+    background: var(--white-color);
+    color: var(--dark-black-color);
+  }
+}
+
+.container {
+  max-width: 1170px;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+@font-face {
+  font-family: 'Unbounded';
+  src: url('./resources/fonts/Unbounded-Medium.woff2') format('woff2'),
+    url('./resources/fonts/Unbounded-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Unbounded';
+  src: url('./resources/fonts/Unbounded-Black.woff2') format('woff2'),
+    url('./resources/fonts/Unbounded-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Unbounded';
+  src: url('./resources/fonts/Unbounded-Light.woff2') format('woff2'),
+    url('./resources/fonts/Unbounded-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Unbounded';
+  src: url('./resources/fonts/Unbounded-ExtraLight.woff2') format('woff2'),
+    url('./resources/fonts/Unbounded-ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Unbounded';
+  src: url('./resources/fonts/Unbounded-Bold.woff2') format('woff2'),
+    url('./resources/fonts/Unbounded-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Unbounded';
+  src: url('./resources/fonts/Unbounded-ExtraBold.woff2') format('woff2'),
+    url('./resources/fonts/Unbounded-ExtraBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Unbounded';
+  src: url('./resources/fonts/Unbounded-SemiBold.woff2') format('woff2'),
+    url('./resources/fonts/Unbounded-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Unbounded';
+  src: url('./resources/fonts/Unbounded-Regular.woff2') format('woff2'),
+    url('./resources/fonts/Unbounded-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

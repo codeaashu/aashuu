@@ -1,0 +1,268 @@
+.shadow_box {
+    position: relative;
+    border-radius: 30px;
+    background: #0F0F0F;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        background: linear-gradient(120deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+        border-radius: 30px;
+        opacity: 0.25;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(to right, rgb(255 255 255 / 15%), rgb(255 255 255 / 1%));
+        background: linear-gradient(120deg, rgb(255 255 255 / 12%), rgb(255 255 255 / 1%));
+        content: '';
+        z-index: -1;
+        border-radius: 30px;
+        margin: -1px;
+    }
+}
+
+.shadow_box * {
+    z-index: 2;
+    position: relative;
+}
+
+.about_area {
+    padding-top: 80px;
+
+    .about_me_wrap {
+        gap: 24px;
+
+        .about_image_box {
+            width: 370px;
+            flex: none;
+            padding: 24px;
+            border-radius: 30px;
+
+            .bg_img {
+                opacity: 0.1;
+                position: absolute;
+                left: 0;
+                top: 0;
+                border-radius: 30px;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                z-index: 0;
+            }
+
+            .image_inner {
+                border-radius: 22px;
+                position: relative;
+                z-index: 1;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: block;
+                    border-radius: 22px;
+                }
+            }
+        }
+
+        .about_details {
+            flex: 1;
+
+            .section_heading {
+                color: var(--white-color);
+                font-size: 62px;
+                font-weight: 600;
+                letter-spacing: -01px;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                justify-content: center;
+                margin-bottom: 10px;
+            }
+
+            .about_details_inner {
+                padding: 115px 60px 30px 30px;
+                position: relative;
+
+                img {
+                    position: absolute;
+                    left: 30px;
+                    top: 0;
+                }
+
+                h1 {
+                    color: var(--white-color);
+                    font-size: 36px;
+                    font-weight: 500;
+                }
+
+                p {
+                    color: var(--white-color);
+                    opacity: 0.8;
+                    line-height: 25px;
+                    margin: 0;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .about_edc_exp {
+        padding: 30px;
+
+        .bg_img {
+            opacity: 0.1;
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-radius: 30px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+        }
+
+        h3 {
+            font-size: 16px;
+            text-transform: uppercase;
+            color: var(--white-color);
+            margin-bottom: 23px;
+        }
+
+        ul {
+            li {
+                .date {
+                    color: #BCBCBC;
+                    opacity: 0.6;
+                    font-size: 16px;
+                    font-weight: 400;
+                    margin-bottom: 12px;
+                }
+
+                h2 {
+                    font-size: 18px;
+                    color: #fff;
+                    opacity: 0.9;
+                    margin-bottom: 7px;
+                }
+
+                .type {
+                    color: #BCBCBC;
+                    font-size: 14px;
+                    opacity: 0.6;
+                    font-weight: 400;
+                    margin: 0;
+                }
+
+                +li {
+                    margin-top: 32px;
+                }
+            }
+        }
+    }
+
+    .info_box {
+        height: 100%;
+    }
+
+    .inner_profile_icons_2 {
+        gap: 20px !important;
+    }
+}
+
+
+
+@media (max-width:1090px) {
+    .about_area .container {
+        padding: 0 20px;
+    }
+
+    .about_area .about_me_wrap .about_details .section_heading {
+        font-size: 52px;
+    }
+
+    .about_area .about_me_wrap .about_details .section_heading img {
+        width: 25px;
+    }
+
+    .about_area .inner_profile_icons a {
+        width: 72px;
+        height: 72px;
+    }
+
+    .about_area .about_contact_box h1 {
+        font-size: 36px;
+        line-height: 50xz;
+    }
+}
+
+@media (max-width:920px) {
+    .about_area .about_me_wrap .about_details .section_heading {
+        font-size: 34px;
+        justify-content: center;
+    }
+}
+
+@media (max-width:810px) {
+    .about_area .about_me_wrap {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center !important;
+    }
+
+    .about_area .about_me_wrap .about_details .section_heading {
+        margin-bottom: 40px;
+    }
+
+    .about_area .about_contact_box h1 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+}
+
+@media (max-width:585px) {
+
+    .about_area .about_me_wrap .about_details .section_heading,
+    .about_area .about_me_wrap .about_details .about_details_inner h1 {
+        font-size: 26px;
+    }
+
+    .about_area .about_me_wrap .about_image_box {
+        max-width: 370px;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .about_area .about_me_wrap .about_details .about_details_inner {
+        padding: 80px 30px 30px;
+    }
+
+    .about_area .about_edc_exp ul li h2 {
+        line-height: 24px;
+    }
+}
+@media (max-width:480px) {
+    .about_area{
+        padding-top: 50px;
+    }
+}
+@media (max-width:360px) {
+    .about_area .about_me_wrap .about_details .section_heading {
+        font-size: 22px;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+}
